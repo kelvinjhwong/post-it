@@ -29,7 +29,6 @@ class PostsController < ApplicationController
   def edit; end
 
   def update
-    binding.pry
     @post = Post.find(params[:id])
 
     if @post.update(post_params)
